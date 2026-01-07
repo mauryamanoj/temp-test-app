@@ -42,6 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderList() {
         console.log(window.parent);
         console.log("window.parent.location.origin--"+document.referrer);
+        console.log("window.parent.location.origin--"+document.referrer);
+        console.log("location.href--"+location.href);
+        console.log("window.parent--"+window.parent.location.href);
         if (entries.length === 0) {
             listWrapper.innerHTML = '<p style="color: #888;">No entries found. Add one on the left!</p>';
             return;
@@ -98,5 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
 
 
