@@ -40,6 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
     cancelBtn.addEventListener('click', resetForm);
 
     function renderList() {
+        console.log("window.location.pathname--"+window.location.pathname);
+        console.log("window.parent--"+window.parent);
         if (entries.length === 0) {
             listWrapper.innerHTML = '<p style="color: #888;">No entries found. Add one on the left!</p>';
             return;
@@ -94,4 +96,5 @@ document.addEventListener('DOMContentLoaded', () => {
         cancelBtn.style.display = 'none';
         userForm.reset();
     }
+
 });
