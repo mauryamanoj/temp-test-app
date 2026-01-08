@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderList() {
         console.log(window.parent);
-        cosole.log('location');
-        cosole.log(location.search);
+        console.log('location');
+        console.log(location.search);
         console.log("window.parent.location.origin--"+document.referrer);
         console.log("window.parent.location.origin--"+document.referrer);
         console.log("location.href--"+location.href);
@@ -103,6 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
 
 
 
